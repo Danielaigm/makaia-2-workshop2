@@ -1,0 +1,11 @@
+.imgContainer {
+  border: 1px solid red;
+  width: 610px;
+  height: 600px;
+}
+.imgContainer__img {
+  width: 610px;
+  height: 600px;
+}
+
+/*# sourceMappingURL=style.css.map */
