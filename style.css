@@ -1,3 +1,8 @@
+
+
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 * {
   padding: 0;
@@ -46,6 +51,15 @@ main {
   justify-content: space-between;
   margin-top: 80px;
   width: 100%;
+======
+.imgContainer {
+  border: 1px solid red;
+  width: 610px;
+  height: 600px;
+}
+.imgContainer__img {
+  width: 610px;
+  height: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */
