@@ -5,13 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop 2</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <header>
-
+    <header class="header-container">
         <!-- aquí trabaja alejandr -->
-
+        <section class="header-container__left-sec">
+            <figure><img src="./img/logo.svg" alt=""></figure>
+            <nav class="header-container__menus-nav">
+                <div class="header-container__features-sec">
+                    <p class="header-container__li-features">Features <figure></figure></p>
+                        <ul class="header-container__features-li hidden">
+                            <p><img src="./img/icon-todo.svg" alt=""> Todo List</p>
+                            <p><img src="./img/icon-calendar.svg" alt=""> Calendar</p>
+                            <p><img src="./img/icon-reminders.svg" alt="">Reminders</p>
+                            <p><img src="./img/icon-planning.svg" alt="">Planning</p>
+                        </ul>
+                
+                </div>
+                </div>
+                <div class="header-container__company">
+                    <h3>Company</h3>
+                    <div class="header-container__company-li hidden">
+                        <p>History</p>
+                        <p>Our Team</p>
+                        <p>Blog</p>
+                    </div>
+                </div>
+                <p>Careers</p>
+                <p>About</p>
+            </ul>
+        </section>
+        <section class="header-container__rigth-sec">
+            <div>
+                <button class="header-container__btn1">Login</button>
+                <button class="header-container__btn2">Register</button>
+            </div>
+            <button class="header-container__modal-btn hidden"><img src="./img/icon-menu.svg" alt=""></button>
+        </section>
+        <section class="modal-sec hidden-pro">
+            
+            <nav class="modal-sec__navbar">
+                <div class="modal-sec__close-div">
+                    <button class="modal-sec__btn-close"><img src="./img/icon-close-menu.svg" alt=""></button>
+                </div>
+                <div class="modal-sec__features-sec">
+                    <p >Features <figure class="modal-sec__fig-featues"></figure></p>
+                        <ul class="modal-sec__features-li hidden">
+                            <p><img src="./img/icon-todo.svg" alt="">  Todo List</p>
+                            <p><img src="./img/icon-calendar.svg" alt="">  Calendar</p>
+                            <p><img src="./img/icon-reminders.svg" alt="">  Reminders</p>
+                            <p><img src="./img/icon-planning.svg" alt="">  Planning</p>
+                        </ul>
+                
+                </div>
+                <div class="modal-sec__company ">
+                    <p>Company <figure class="modal-sec__fig-company"></figure></p>
+                    <ul class="modal-sec__company-ul hidden">
+                        <p>History</p>
+                        <p>Our Team</p>
+                        <p>Blog</p>
+                    </ul>
+                </div>
+                <p>Careers</p>
+                <p>About</p>
+                <div class="modal-sec__btns">
+                    <button class="modal-sec__btn1">Login</button>
+                    <button class="modal-sec__btn2">Register</button>
+                </div>
+            </nav>
+        </section>
     </header>
 
     <main>
@@ -25,6 +89,6 @@
         </section>
 
     </main>
-    
+    <script src="./main.js" type="text/javascript"></script>
 </body>
 </html>
