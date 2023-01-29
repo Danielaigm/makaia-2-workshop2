@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-pro {
+  display: none !important;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px 10px 36px;
+}
+.header-container__left-sec {
+  display: flex;
+  gap: 60px;
+}
+.header-container__menus-nav {
+  display: flex;
+  gap: 35px;
+}
+.header-container__menus-nav p:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+@media (max-width: 425px) {
+  .header-container__menus-nav {
+    display: none;
+  }
+}
+.header-container__features-sec {
+  width: 80px;
+  height: 35px;
+}
+.header-container__features-sec:hover {
+  cursor: pointer;
+}
+.header-container__features-sec:hover ul {
+  display: block;
+}
+.header-container__features-li {
+  position: relative;
+  left: -70px;
+  width: 170px;
+  border-radius: 8px;
+  height: 170px;
+  padding: 30px;
+  margin-top: 20px;
+  box-shadow: 1px 4px 15px 0px;
+}
+.header-container__features-li p {
+  margin-bottom: 10px;
+}
+.header-container__company {
+  width: 80px;
+  height: 35px;
+}
+.header-container__company:hover {
+  cursor: pointer;
+}
+.header-container__company:hover ul {
+  display: block;
+}
+.header-container__company-li {
+  padding: 30px;
+  width: 150px;
+  border-radius: 8px;
+  height: 135px;
+  margin-top: 20px;
+  box-shadow: 1px 4px 15px 0px;
+}
+.header-container__company-li p {
+  margin-bottom: 10px;
+}
+@media (max-width: 425px) {
+  .header-container__rigth-sec div {
+    display: none;
+  }
+}
+.header-container__btn1 {
+  color: hsl(0deg, 0%, 41%);
+  width: 75px;
+  height: 45px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: white;
+  border: none;
+}
+.header-container__btn1:hover {
+  cursor: pointer;
+  color: black;
+}
+.header-container__btn2 {
+  color: hsl(0deg, 0%, 41%);
+  width: 115px;
+  height: 50px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: white;
+  border: 2px hsl(0deg, 0%, 41%) solid;
+  border-radius: 18px;
+}
+.header-container__btn2:hover {
+  cursor: pointer;
+  color: black;
+  border: 2px black solid;
+}
+@media (max-width: 400px) {
+  .header-container__modal-btn {
+    display: block;
+    background-color: white;
+    border: none;
+  }
+  .header-container__modal-btn:hover {
+    cursor: pointer;
+  }
+}
+
+.modal-sec {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.8588235294);
+  display: flex;
+  flex-direction: row-reverse;
+}
+.modal-sec__navbar {
+  background-color: hsl(0deg, 0%, 100%);
+  height: 100vh;
+  width: 250px;
+  padding: 20px 20px 10px 20px;
+  color: hsl(0deg, 0%, 41%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal-sec__navbar p:hover {
+  cursor: pointer;
+  font-weight: 700;
+  color: black;
+}
+.modal-sec__close-div {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.modal-sec__btn-close {
+  border: none;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 40px;
+}
+.modal-sec__btn-close:hover {
+  border: black solid;
+  cursor: pointer;
+}
+.modal-sec__features-sec:hover {
+  cursor: pointer;
+}
+.modal-sec__features-sec:hover ul {
+  display: block;
+}
+.modal-sec__features-li {
+  height: 180px;
+  padding: 25px 30px 10px 45px;
+  box-shadow: 1px 4px 15px 0px;
+  border-radius: 8px;
+  margin: 15px 10px 20px 10px;
+}
+.modal-sec__features-li p {
+  margin-bottom: 15px;
+}
+.modal-sec__company:hover ul {
+  display: block;
+}
+.modal-sec__company-ul {
+  height: 130px;
+  width: 180px;
+  padding: 20px 30px 10px 40px;
+  margin: 15px 19px 25px 10px;
+  box-shadow: 1px 4px 15px 0px;
+  border-radius: 8px;
+}
+.modal-sec__company-ul p {
+  margin-bottom: 15px;
+}
+.modal-sec__btns {
+  display: flex;
+  flex-direction: column;
+}
+.modal-sec__btn1 {
+  border: none;
+  background-color: white;
+  height: 45px;
+  font-size: 18px;
+  color: hsl(0deg, 0%, 41%);
+}
+.modal-sec__btn1:hover {
+  cursor: pointer;
+  color: black;
+  font-weight: 700;
+}
+.modal-sec__btn2 {
+  border: hsl(0deg, 0%, 41%) solid;
+  border-radius: 15px;
+  background-color: white;
+  height: 45px;
+  font-size: 18px;
+  color: hsl(0deg, 0%, 41%);
+}
+.modal-sec__btn2:hover {
+  cursor: pointer;
+  color: black;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
