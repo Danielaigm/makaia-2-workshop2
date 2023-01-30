@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 * {
   padding: 0;
@@ -22,6 +21,7 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 35px 10px 36px;
 }
 .header-container__left-sec {
@@ -59,7 +59,6 @@ body {
   height: 170px;
   padding: 30px;
   margin-top: 20px;
-  box-shadow: 1px 4px 15px 0px;
 }
 .header-container__features-li p {
   margin-bottom: 10px;
@@ -80,7 +79,6 @@ body {
   border-radius: 8px;
   height: 135px;
   margin-top: 20px;
-  box-shadow: 1px 4px 15px 0px;
 }
 .header-container__company-li p {
   margin-bottom: 10px;
@@ -180,7 +178,6 @@ body {
 .modal-sec__features-li {
   height: 180px;
   padding: 25px 30px 10px 45px;
-  box-shadow: 1px 4px 15px 0px;
   border-radius: 8px;
   margin: 15px 10px 20px 10px;
 }
@@ -195,7 +192,6 @@ body {
   width: 180px;
   padding: 20px 30px 10px 40px;
   margin: 15px 19px 25px 10px;
-  box-shadow: 1px 4px 15px 0px;
   border-radius: 8px;
 }
 .modal-sec__company-ul p {
@@ -235,10 +231,11 @@ body {
 
 main {
   padding: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .infoContain {
-  border: 1px solid red;
   width: 610px;
   display: flex;
   flex-direction: column;
@@ -248,6 +245,7 @@ main {
 }
 .infoContain__title {
   font-size: 5.5rem;
+  margin-top: 50px;
 }
 .infoContain__text {
   font-size: 1.3rem;
@@ -267,18 +265,67 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 30px;
   width: 100%;
 }
+@media (max-width: 400px) {
+  .infoContain {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 350px;
+  }
+  .infoContain__title {
+    font-size: 1.8rem;
+    margin-top: 10px;
+
+  }
+  .infoContain__text {
+    font-size: 1rem;
+    margin: 0px;
+    text-align: center;
+  }
+  .infoContain__button {
+    font-size: 1rem;
+    width: 150px;
+  }
+
+  .infoContain div {
+    gap: 20px;
+
+  }
+  
+  .imgContain__img{
+    width:70px;
+  }
+}
 .imgContainer {
-  border: 1px solid red;
   width: 610px;
   height: 600px;
 }
-.imgContainer__img {
-  width: 610px;
-  height: 600px;
+.imgContainer{
+  background-image: url(../img/image-hero-desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  
+}
+
+@media (max-width: 400px) {
+  main{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .imgContainer{
+    background-image: url(../img/image-hero-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 300px;
+  }
 
 }
+
 
 /*# sourceMappingURL=style.css.map */
